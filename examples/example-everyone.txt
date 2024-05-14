@@ -1,0 +1,3 @@
+Person1 p1@email.com    RF  50
+Person2 p2@email.com    TF  0
+Person3 p3@email.com    RF  150

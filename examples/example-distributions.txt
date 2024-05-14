@@ -1,0 +1,9 @@
+Joe joe@school.edu  sends   Tom $10
+Joe     listed      $15
+
+Sam sam@school.edu  sends   Mikey   $20
+Sam     listed      $25
+
+Anna    anna@biz.org    sends   Craig   $30
+Anna    anna@biz.org    sends   Tom $15
+Anna        listed      $50
