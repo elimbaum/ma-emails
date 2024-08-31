@@ -107,37 +107,39 @@ f"""
 
     print('\n' * 10 + "========\n")
 
+    TODAY = "XX Aug"
+
     message = inspect.cleandoc(
 f"""
 To: {rf_email}
-From: CS Mutual Aid
-Subject: 3 May Mutual Aid Distribution
+From: Math/CS Mutual Aid
+Subject:{TODAY} Mutual Aid Distribution
 
 Hi {rf},
 
-Thank you for contributing to mutual aid! Your money will be supporting the following TF(s) for the April 22-28 week (May 3rd paycheck).
+Thank you for contributing to mutual aid! Your money will be supporting the following striking workers for the week of Aug XX-XX.
 {donation_str}
 
-If you can send the money now, please do so using one of the payment methods listed above. Otherwise, send an email to the TF letting them know you can send your contribution once you get paid for this week.
+If you can send the money now, please do so using one of the payment methods listed above. Otherwise, send an email to the IoR letting them know you can send your contribution once you get paid for this week.
 
 Let us know if you have any difficulties or delays. We're also happy to answer any other questions you may have.
 
-Note that this is the *final* mutual aid distribution of the spring semester. Over the coming weeks we will discuss the best way to operate over the summer.
-
 Best,
-CS Mutual Aid Team
+Math/CS Mutual Aid Team
 
 """)
     print(message)
 
-    input()
+    # input()
+    # time.sleep(1)
 
     message.replace('\n', '\r\n')
     connection.sendmail(from_addr, rf_email, message)
 
 def distribution_emails(FILE):
     num_sent = 0
-    print(f"Sending confirmation emails from file {FILE}")
+    print(f"Sending distribution emails from file {FILE}")
+    print(f"Did you update the email body?")
     input()
     with open(FILE) as f:
         rf = tf = email = None
